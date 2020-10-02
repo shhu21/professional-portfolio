@@ -16,7 +16,7 @@ function About() {
                         <span>Front-End Developer,</span>
                         <span>Art Hobbist,</span>
                         <span>and</span>
-                        <span>Animal Enthusist.</span>
+                        <span>Animal Enthusiast.</span>
                     </div>
                 </div>
             </div>

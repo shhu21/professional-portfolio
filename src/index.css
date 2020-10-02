@@ -21,7 +21,6 @@ code {
 
 header {
   padding: 2rem;
-  /* background-color: var(--main-color); */
   color: var(--secondary-color);
   display: flex;
 }
@@ -65,9 +64,6 @@ header .nav-link:hover {
 }
 
 main {
-  /* background-image: url('./assets/images/background.jpg');
-  background-repeat: no-repeat;
-  background-size: cover; */
   padding: 3rem;
   color: var(--accent-color);
   min-height: 100vh;
@@ -95,6 +91,91 @@ main {
   height: 40vmin;
   left: 25%;
   position: relative;
+}
+
+.contact-section {
+  width: 50%;
+  margin: auto;
+  color: var(--accent-color);
+}
+
+#contact-form {
+  padding: 1rem;
+  background-color: var(--secondary-color);
+}
+
+#contact-form label {
+  font-weight: bold;
+  font-size: 20px;
+  color: var(--main-color);
+}
+
+#contact-form input, textarea {
+  padding-top: 1rem;
+  background: transparent;
+  font-size: 15px;
+  width: 100%;
+  margin-top: 5px;
+  color: var(--main-color);
+  border: none;
+  border-bottom: solid 1px var(--accent-color);
+  margin-bottom: 15px;
+}
+
+#contact-form input:focus, textarea:focus {
+  border: solid 1px var(--main-color);
+  border-radius: 3px;
+  outline-color: transparent;
+  outline-style: none;
+}
+
+#contact-form button {
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  border-radius: 3px;
+  background-color: var(--main-color);
+  color: var(--secondary-color);
+  font-family: var(--font-style);
+  font-size: 20px;
+  border: none;
+  height: 6vmin;
+  font-weight: bold;
+}
+
+#contact-form button:hover {
+  font-size: larger;
+}
+
+#contact-title {
+  background-color: var(--main-color);
+  color: var(--secondary-color);
+  padding: 1rem;
+  margin: 0;
+  text-align: center;
+}
+
+#contact-form label {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.error-text {
+  border-radius: 3px;
+  color: var(--accent-color);
+  background-color: #F4E9D1;
+  width: fit-content;
+  font-size: 15px;
+  margin: 0 20px;
+  padding: 3px;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-text-fill-color: var(--main-color) !important;
 }
 
 footer {
@@ -166,6 +247,43 @@ footer {
   animation-fill-mode: forwards;
   top: 0;
   transform: translate(0, -100%);
+}
+
+.tooltip {
+  position: relative;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: var(--accent-color);
+  color: var(--secondary-color);
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
 }
 
 /* TODO: media queries */

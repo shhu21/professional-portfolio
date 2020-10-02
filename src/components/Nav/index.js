@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { capitalizeFirstLetter } from '../../utils/helpers';
 
 function Nav({contactSelected, setContactSelected}) {
-    const tabs = ['about', 'contact', 'portfolio'];
+    const tabs = ['about', 'portfolio', 'contact'];
 
     return (
         <ul className="nav nav-tabs">

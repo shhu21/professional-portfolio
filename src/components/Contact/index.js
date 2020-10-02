@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import { validateEmail } from '../../utils/helpers';
 
 function ContactForm() {
-    const [errorMessage, setErrorMessage] = useState('');
+    const [invalidEmail, setErrorEmail] = useState('');
+    const [invalidName, setErrorName] = useState('');
     const [formState, setFormState] = useState({ name: '', email: '', message: '' });
     const { name, email, message } = formState;
 
@@ -13,17 +14,17 @@ function ContactForm() {
             
             // isValid conditional statement
             if (!isValid) {
-                setErrorMessage('Your email is invalid.');
+                setErrorEmail('Invalid email!');
             } else {
                 if (!e.target.value.length) {
-                  setErrorMessage(`${e.target.name} is required.`);
+                  setErrorEmail(`${e.target.name} is required.`);
                 } else {
-                  setErrorMessage('');
+                  setErrorEmail('');
                 }
             }
         } 
 
-        if (!errorMessage) {
+        if (!invalidEmail) {
             setFormState({ ...formState, [e.target.name]: e.target.value });
         }
     }
@@ -31,29 +32,43 @@ function ContactForm() {
     function handleSubmit(e) {
         e.preventDefault();
         console.log(formState);
+        if(!formState.name) {
+            setErrorName('Please enter your name. (Required)');
+        }
+
+        if(!formState.email) {
+            setErrorEmail('Please enter your email. (Required)');
+        }
     }
 
     return (
-        <section>
-            <h1 className='section-title'>Contact me</h1>
+        <section className='contact-section'>
+            <h1 className='section-title' id='contact-title'>Contact Me</h1>
             <form id="contact-form" onSubmit={handleSubmit}>
-                <div>
-                    <label htmlFor="name">Name:</label>
-                    <input type="text" defaultValue={name} onChange={handleChange} name="name" />
+                <div className='tooltip'>
+                    <label htmlFor="name">Name:
+                    {invalidName && (
+                            <div>
+                                <p className="error-text">{invalidName}</p>
+                            </div>
+                        )}</label>
+                    <input type="text" placeholder='Name' defaultValue={name} onChange={handleChange} name="name" />
+                    <span class="tooltiptext">Required.</span>
                 </div>
-                <div>
-                    <label htmlFor="email">Email address:</label>
-                    <input type="email" defaultValue={email} name="email" onChange={handleChange} />
+                <div className='tooltip'>
+                    <label htmlFor="email">Email address:
+                        {invalidEmail && (
+                            <div>
+                                <p className="error-text">{invalidEmail}</p>
+                            </div>
+                        )}</label>
+                    <input type="email" placeholder='Email' defaultValue={email} name="email" onChange={handleChange} />
+                    <span class="tooltiptext">Required.</span>
                 </div>
                 <div>
                     <label htmlFor="message">Message:</label>
                     <textarea name="message" defaultValue={message} onChange={handleChange} rows="5" />
                 </div>
-                {errorMessage && (
-                    <div>
-                        <p className="error-text">{errorMessage}</p>
-                    </div>
-                )}
                 <button data-testid="submit" type="submit">Submit</button>
             </form>
         </section>
