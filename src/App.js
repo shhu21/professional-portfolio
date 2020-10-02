@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Nav from './components/Nav';
+import Header from './components/Header';
 import About from './components/About';
 import Resume from './components/Resume';
 import Projects from './components/Projects';
@@ -10,10 +10,10 @@ function App() {
 
   return (
     <div>
-      <Nav
+      <Header
         contactSelected={contactSelected}
         setContactSelected={setContactSelected}
-      ></Nav>
+      ></Header>
       <main>
         {
           {
