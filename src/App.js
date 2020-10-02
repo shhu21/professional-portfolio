@@ -4,28 +4,19 @@ import About from './components/About';
 import Portfolio from './components/Portfolio';
 import ContactForm from './components/Contact';
 import Footer from './components/Footer';
+import ProjectList from './assets/data/projectList';
+import ProfileList from './assets/data/profileList';
 
 function App() {
   const [contactSelected, setContactSelected] = useState('about');
-  const [projects] = useState([
-    {
-      project: 'CampusMate',
-      languages: 'Swift',
-      description: 'An IOS mobile application.',
-    },
-    {
-      project: 'Trip Planner',
-      languages: 'JS',
-      description: 'A trip planner.',
-    }
-  ]);
+  const [projects] = useState(ProjectList);
 
   return (
     <div>
       <Header
         contactSelected={contactSelected}
         setContactSelected={setContactSelected}
-      ></Header>
+      />
       <main>
         {
           {
@@ -35,7 +26,7 @@ function App() {
           }[contactSelected]
         }
       </main>
-      <Footer/>
+      <Footer profileList={ProfileList}/>
     </div>
   );
 }

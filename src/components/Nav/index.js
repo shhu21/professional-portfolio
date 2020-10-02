@@ -1,13 +1,9 @@
 import React, { useEffect } from 'react';
 import { capitalizeFirstLetter } from '../../utils/helpers';
 
-function Nav(props) {
-    const {
-        contactSelected,
-        setContactSelected
-    } = props;
-
+function Nav({contactSelected, setContactSelected}) {
     const tabs = ['about', 'contact', 'portfolio'];
+
     return (
         <ul className="nav nav-tabs">
             {tabs.map(tab => (
@@ -23,7 +19,8 @@ function Nav(props) {
                     </a>
                 </li>
             ))}
-            <li><a className='nav-link' href=''>Resume</a></li>
+            {/* FIXME: resume doesn't download */}
+            <li><a className='nav-link' href="../../assets/images/Resume.pdf" target="_blank">Resume</a></li>
         </ul>
     );
 }

@@ -1,9 +1,13 @@
 import React from 'react'; 
 
-function Footer() {
+function Footer({profileList}) {
     return (
         <footer className="my-5">
-            <h1>Footer</h1>
+            {profileList.map(profile => (
+                <a href={profile.link}>
+                    <img className='icon' src={profile.src}/>
+                </a>    
+            ))}
         </footer>
     );
 }

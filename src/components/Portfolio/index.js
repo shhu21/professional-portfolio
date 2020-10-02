@@ -5,14 +5,16 @@ const Portfolio = ({projects}) => {
   return (
     <section id="Portfolio" className="my-5">
       <h1 className='section-title'>Portfolio</h1>
-      {projects.map((proj) => (
-        <Project 
-          key={proj.project} 
-          project={proj.project}
-          languages={proj.languages}
-          description={proj.description} 
-        />
-      ))}
+      <div className='flex-container'>
+        {projects.map((proj) => (
+          <Project 
+            key={proj.project} 
+            project={proj.project}
+            languages={proj.languages}
+            description={proj.description} 
+          />
+        ))}
+      </div>
     </section>
   );
 };

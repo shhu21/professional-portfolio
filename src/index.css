@@ -59,10 +59,21 @@ header .nav-link:hover {
 }
 
 main {
-  margin: 3rem;
+  padding: 3rem;
   color: var(--accent-color);
-  min-height: 100vh; /* will cover the 100% of viewport */
+  min-height: 100vh;
   margin-bottom: -50px;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.project-img {
+  width: 350px;
+  height: 250px;
 }
 
 .section-title {
@@ -82,4 +93,8 @@ footer {
   height: 5rem;
   margin-top: -5rem;
   text-align: center;
+}
+
+.icon {
+  margin: 1rem 2rem;
 }
