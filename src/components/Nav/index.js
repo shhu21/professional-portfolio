@@ -7,27 +7,24 @@ function Nav(props) {
         setContactSelected
     } = props;
 
+    const tabs = ['about', 'contact', 'portfolio'];
     return (
-        <header className="flex-row px-1">
-        <nav>
-            <ul className="flex-row">
-            <li className="mx-2">
-                <a data-testid="about" onClick={() => setContactSelected('about')}>
-                About me
-                </a>
-            </li>
-            <li className="mx-2">
-                <span onClick={() => setContactSelected('contact')}>Contact</span>
-            </li>
-            <li className="mx-2">
-                <span onClick={() => setContactSelected('projects')}>Projects</span>
-            </li>
-            <li className="mx-2">
-                <span onClick={() => setContactSelected('resume')}>Resume</span>
-            </li>
-            </ul>
-        </nav>
-        </header>
+        <ul className="nav nav-tabs">
+            {tabs.map(tab => (
+                <li className="nav-item" key={tab}>
+                    <a
+                        href={'#' + tab}
+                        onClick={() => setContactSelected(tab)}
+                        className={
+                        contactSelected === tab ? 'nav-link active' : 'nav-link'
+                        }
+                    >
+                        {capitalizeFirstLetter(tab)}
+                    </a>
+                </li>
+            ))}
+            <li><a className='nav-link' href=''>Resume</a></li>
+        </ul>
     );
 }
 

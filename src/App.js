@@ -1,12 +1,24 @@
 import React, { useState } from 'react';
 import Header from './components/Header';
 import About from './components/About';
-import Resume from './components/Resume';
-import Projects from './components/Projects';
+import Portfolio from './components/Portfolio';
 import ContactForm from './components/Contact';
+import Footer from './components/Footer';
 
 function App() {
   const [contactSelected, setContactSelected] = useState('about');
+  const [projects] = useState([
+    {
+      project: 'CampusMate',
+      languages: 'Swift',
+      description: 'An IOS mobile application.',
+    },
+    {
+      project: 'Trip Planner',
+      languages: 'JS',
+      description: 'A trip planner.',
+    }
+  ]);
 
   return (
     <div>
@@ -17,13 +29,13 @@ function App() {
       <main>
         {
           {
-            about: <About></About>,
-            contact: <ContactForm></ContactForm>,
-            projects: <Projects></Projects>,
-            resume: <Resume></Resume>
+            about: <About/>,
+            contact: <ContactForm/>,
+            portfolio: <Portfolio projects={projects}/>
           }[contactSelected]
         }
       </main>
+      <Footer/>
     </div>
   );
 }

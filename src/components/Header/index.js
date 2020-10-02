@@ -9,6 +9,7 @@ function Header(props) {
 
     return (
         <header>
+            <h1>Sara Hu</h1>
             <Nav
                 contactSelected={contactSelected}
                 setContactSelected={setContactSelected}
