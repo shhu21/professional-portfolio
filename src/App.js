@@ -12,7 +12,7 @@ function App() {
   const [projects] = useState(ProjectList);
 
   return (
-    <div>
+    <div className='main'>
       <Header
         contactSelected={contactSelected}
         setContactSelected={setContactSelected}

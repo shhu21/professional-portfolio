@@ -4,7 +4,7 @@ function Project({project, languages, description}) {
     return (
         <section>
             {/* TODO: add links to projects */}
-            <img className='project-img' src={require(`../../assets/images/${project}.png`)}></img>
+            <img className='project-img' alt={project} src={require(`../../assets/images/${project}.png`)}></img>
             <div>
                 <h3 className='project-title'>{project}</h3>
                 <div className='project-content'>
