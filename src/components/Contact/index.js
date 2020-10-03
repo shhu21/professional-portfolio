@@ -22,7 +22,13 @@ function ContactForm() {
                   setErrorEmail('');
                 }
             }
-        } 
+        }
+        else if(e.target.name === 'name')  {
+            if(invalidName === 'Please enter your name. (Required)' && e.target.value) {
+                setErrorName('');
+                setFormState({ ...formState, [e.target.name]: e.target.value });
+            }
+        }
 
         if (!invalidEmail) {
             setFormState({ ...formState, [e.target.name]: e.target.value });
@@ -32,6 +38,7 @@ function ContactForm() {
     function handleSubmit(e) {
         e.preventDefault();
         console.log(formState);
+        
         if(!formState.name) {
             setErrorName('Please enter your name. (Required)');
         }
@@ -52,7 +59,7 @@ function ContactForm() {
                                 <p className="error-text">{invalidName}</p>
                             </div>
                         )}</label>
-                    <input type="text" placeholder='Name' defaultValue={name} onChange={handleChange} name="name" />
+                    <input type="text" placeholder='Name' defaultValue={name} onChange={handleChange} name="name" autocomplete="off" />
                     <span class="tooltiptext">Required.</span>
                 </div>
                 <div className='tooltip'>
@@ -62,7 +69,7 @@ function ContactForm() {
                                 <p className="error-text">{invalidEmail}</p>
                             </div>
                         )}</label>
-                    <input type="email" placeholder='Email' defaultValue={email} name="email" onChange={handleChange} />
+                    <input type="email" placeholder='Email' defaultValue={email} name="email" onChange={handleChange} autocomplete="off" />
                     <span class="tooltiptext">Required.</span>
                 </div>
                 <div>
