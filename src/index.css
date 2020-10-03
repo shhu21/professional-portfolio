@@ -64,7 +64,7 @@ header .nav-link:hover {
 }
 
 main {
-  padding: 3rem;
+  padding: 0 3rem 5rem 3rem;
   color: var(--accent-color);
   min-height: 100vh;
   margin-bottom: -50px;
@@ -79,11 +79,92 @@ main {
 .project-img {
   width: 350px;
   height: 250px;
+  opacity: 0.75;
+  display: block;
+  transition: .5s ease;
+}
+
+.project:hover .project-img{
+  opacity: 1;
+}
+
+.modal {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+  border-radius: 3px;
+}
+
+.modal-container {
+  width: 50%;
+  height: fit-content;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.modal-content {
+  background-color: var(--secondary-color);
+  color: var(--accent-color);
+  font-size: 20px;
+  text-align: center;
+  transform: translateY(0);
+  opacity: 1;
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+  padding: 60px 30px 20px;
+  background: #fff;
+  -webkit-box-flex: 1.5;
+  flex: 1.5;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+.modal-right {
+  -webkit-box-flex: 2;
+  flex: 2;
+  font-size: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  overflow: hidden;
+}
+
+.modal-img {
+  width: 100%;
+  height: 100%;
+  transition-duration: 1.2s;
+  transform: scale(1);
+}
+
+.modal-content button {
+  background-color: var(--main-color);
+  border: none;
+  color: white;
+  opacity: 1;
+  font-weight: bolder;
+  font-size: 15px;
+  width: 40%;
+  height: 5vmin;
+  border-radius: 3px;
+}
+
+.modal-content button:hover {
+  font-size: 13px;
 }
 
 .section-title {
-  font-size: 32px;
+  font-size: 52px;
+  color: var(--secondary-color);
   font-weight: bold;
+  text-align: center;
 }
 
 .profile {
@@ -209,6 +290,7 @@ footer {
   top: 50%;
   transform: translate(-50%, -50%);
   width: 50vmin;
+  margin-top: 10vmin;
 }
 .animated-title > div {
   height: 50%;
@@ -284,6 +366,38 @@ footer {
 .tooltip:hover .tooltiptext {
   visibility: visible;
   opacity: 1;
+}
+
+.project {
+  position: relative;
+  overflow: hidden;
+  margin: 1rem;
+}
+
+.project-title {
+  position: absolute;
+  padding: 1rem;
+  bottom: -5rem;
+  right: 0;
+  width: 350px;
+  height: 0;
+  color: var(--main-color);
+  font-weight: bold;
+  text-align: center;    
+  background: var(--secondary-color);
+  transition: height 0.7s ease-out;    
+  opacity: 0.9;
+}
+
+.project-title span {
+  display: block;
+  color: var(--accent-color);
+  margin-top: 5px;
+  font-size: smaller;
+}
+
+.project:hover > .project-title {
+  height: 110px;
 }
 
 /* TODO: media queries */

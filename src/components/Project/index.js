@@ -1,18 +1,18 @@
-import React from 'react'; 
+import React, { useState } from 'react';
+import Modal from '../Modal';
 
 function Project({project, languages, description}) {
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const toggleModal = () => {
+        setIsModalOpen(!isModalOpen);
+    }
     return (
         <section>
-            {/* TODO: add links to projects */}
-            <img className='project-img' alt={project} src={require(`../../assets/images/${project}.png`)}></img>
-            <div>
-                <h3 className='project-title'>{project}</h3>
-                <div className='project-content'>
-                    <h4 className='project-subtitle'>Languages</h4>
-                    <p>{languages}</p>
-                    <h4 className='project-subtitle'>Description</h4>
-                    <p>{description}</p>
-                </div>
+            <div className="project"><img className='project-img' src={require(`../../assets/images/${project}.png`)} onClick={toggleModal} />
+                {isModalOpen && (
+                    <Modal project={project} languages={languages} description={description} onClose={toggleModal} />
+                )}
+                <h3 className='project-title'>{project} <span>({languages})</span></h3>
             </div>
         </section>
     );

@@ -3,6 +3,7 @@ import React from 'react';
 function About() {
     return (
         <section className="my-5">
+            <h1 className='section-title'>About Me</h1>
             <img className='profile' alt='profile' src={require(`../../assets/images/profile.jpeg`)}></img> 
             <div class="animated-title">
                 <div class="text-top">
