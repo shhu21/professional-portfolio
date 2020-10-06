@@ -23,6 +23,7 @@ header {
   padding: 2rem;
   color: var(--secondary-color);
   display: flex;
+  justify-content: space-between;
 }
 
 header h1 {
@@ -30,26 +31,18 @@ header h1 {
   font-size: 45px;
 }
 
-header ul {
-  list-style-type: none;
-  display: flex;
-  justify-content: space-between;
-}
-
-header li {
-  margin-left: 2rem;
-}
-
 .nav-link {
   font-size: 25px;
-  padding: 3px;
+  margin: 10px;
   text-decoration: none;
   color: var(--secondary-color);
   font-weight: bold;
+  width: fit-content;
 }
 
 header .nav-link:hover {
   border-bottom: var(--accent-color) 4px solid;
+  color: var(--secondary-color);
 }
 
 .active {
@@ -76,65 +69,16 @@ main {
   flex-wrap: wrap;
 }
 
-.project-img {
-  width: 350px;
-  height: 250px;
-  opacity: 1;
-  display: block;
-  transition: .5s ease;
-}
-
-.project:hover .project-img{
-  opacity: 0.75;
-}
-
 .modal {
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0,0,0,0.4);
-  border-radius: 3px;
+
 }
 
 .modal-container {
-  width: 50%;
-  height: fit-content;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.modal-content {
-  background-color: var(--secondary-color);
-  color: var(--accent-color);
-  font-size: 20px;
   text-align: center;
-  transform: translateY(0);
-  opacity: 1;
-  -webkit-transition-delay: 0.1s;
-  transition-delay: 0.1s;
-  padding: 60px 30px 20px;
-  background: #fff;
-  -webkit-box-flex: 1.5;
-  flex: 1.5;
-  -webkit-transition-duration: 0.5s;
-  transition-duration: 0.5s;
 }
 
-.modal-right {
-  -webkit-box-flex: 2;
-  flex: 2;
-  font-size: 0;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  overflow: hidden;
+.modal-btn {
+
 }
 
 .modal-img {
@@ -142,22 +86,6 @@ main {
   height: 100%;
   transition-duration: 1.2s;
   transform: scale(1);
-}
-
-.modal-content button {
-  background-color: var(--main-color);
-  border: none;
-  color: white;
-  opacity: 1;
-  font-weight: bolder;
-  font-size: 15px;
-  width: 40%;
-  height: 5vmin;
-  border-radius: 3px;
-}
-
-.modal-content button:hover {
-  font-size: 13px;
 }
 
 .section-title {
@@ -266,7 +194,11 @@ footer {
   position: relative;
   height: 5rem;
   margin-top: -5rem;
+  margin-bottom: 0;
   text-align: center;
+}
+.mb-5, .my-5 {
+  margin-bottom: 0!important;
 }
 
 .icon {
@@ -372,32 +304,50 @@ footer {
   position: relative;
   overflow: hidden;
   margin: 1rem;
+  width: 350px;
+  height: 250px;
 }
 
-.project-title {
+.project-img {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  display: block;
+  transition: .5s ease;
+}
+
+.project:hover .project-img{
+  opacity: 0.75;
+}
+
+.overlay {
   position: absolute;
-  padding: 1rem;
-  bottom: -5rem;
+  bottom: 0;
+  left: 0;
   right: 0;
-  width: 350px;
-  height: 0;
-  color: var(--main-color);
-  font-weight: bold;
-  text-align: center;    
-  background: var(--secondary-color);
-  transition: height 0.7s ease-out;    
+  background-color: var(--main-color);
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
   opacity: 0.9;
 }
 
-.project-title span {
-  display: block;
-  color: var(--accent-color);
-  margin-top: 5px;
-  font-size: smaller;
+.project:hover .overlay {
+  width: 100%;
+  cursor: pointer;
 }
 
-.project:hover > .project-title {
-  height: 110px;
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
 }
 
 .resume-container {

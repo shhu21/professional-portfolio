@@ -1,26 +1,27 @@
 import React from 'react';
+import Nav from 'react-bootstrap/Nav';
 import { capitalizeFirstLetter } from '../../utils/helpers';
 
-function Nav({contactSelected, setContactSelected}) {
+function NavItem({contactSelected, setContactSelected}) {
     const tabs = ['about', 'portfolio', 'contact', 'resume'];
 
     return (
-        <ul className="nav nav-tabs">
+        <Nav className="justify-content-end" activeKey="/home">
             {tabs.map(tab => (
-                <li className="nav-item" key={tab}>
-                    <a
+                <Nav.Item>
+                    <Nav.Link 
+                        eventKey={tab}
                         href={'#' + tab}
                         onClick={() => setContactSelected(tab)}
                         className={
                         contactSelected === tab ? 'nav-link active' : 'nav-link'
-                        }
-                    >
+                        }>
                         {capitalizeFirstLetter(tab)}
-                    </a>
-                </li>
+                    </Nav.Link>
+                </Nav.Item>
             ))}
-        </ul>
+        </Nav>
     );
 }
 
-export default Nav;
+export default NavItem;

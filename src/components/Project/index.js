@@ -1,19 +1,24 @@
 import React, { useState } from 'react';
-import Modal from '../Modal';
+import InfoModal from '../Modal';
+import Image from 'react-bootstrap/Image';
 
 function Project({project, languages, description}) {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const toggleModal = () => {
         setIsModalOpen(!isModalOpen);
     }
+
     return (
         <section>
-            <div className="project"><img className='project-img' src={require(`../../assets/images/${project}.png`)} onClick={toggleModal} />
-                {isModalOpen && (
-                    <Modal project={project} languages={languages} description={description} onClose={toggleModal} />
-                )}
-                <h3 className='project-title'>{project} <span>({languages})</span></h3>
+            <div className="project" onClick={toggleModal} >
+                <img src={require(`../../assets/images/${project}.png`)}  alt={project} className="project-img"/>
+                <div className="overlay project-title">
+                    <h3 className='text'>{project} <span>({languages})</span></h3>
+                </div>
             </div>
+            {isModalOpen && (
+                <InfoModal onClose={toggleModal} project={project} languages={languages} description={description} />
+            )}
         </section>
     );
 }
