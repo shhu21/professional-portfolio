@@ -79,13 +79,13 @@ main {
 .project-img {
   width: 350px;
   height: 250px;
-  opacity: 0.75;
+  opacity: 1;
   display: block;
   transition: .5s ease;
 }
 
 .project:hover .project-img{
-  opacity: 1;
+  opacity: 0.75;
 }
 
 .modal {
@@ -398,6 +398,23 @@ footer {
 
 .project:hover > .project-title {
   height: 110px;
+}
+
+.resume-container {
+  color: var(--secondary-color);
+}
+
+.resume-section {
+  font-weight: bolder;
+  font-size: 28px;
+  border-bottom: 3px var(--main-color) solid;
+  width: fit-content;
+  margin: 1rem 0;
+}
+
+.resume-subtitle {
+  font-weight: bold;
+  font-size: 20px;
 }
 
 /* TODO: media queries */

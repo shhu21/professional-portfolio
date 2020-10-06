@@ -3,7 +3,7 @@ import Project from '../Project';
 
 const Portfolio = ({projects}) => {
   return (
-    <section id="Portfolio" className="my-5">
+    <section>
       <h1 className='section-title'>Projects</h1>
       <div className='flex-container'>
         {projects.map((proj) => (

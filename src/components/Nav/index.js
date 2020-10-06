@@ -1,8 +1,8 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { capitalizeFirstLetter } from '../../utils/helpers';
 
 function Nav({contactSelected, setContactSelected}) {
-    const tabs = ['about', 'portfolio', 'contact'];
+    const tabs = ['about', 'portfolio', 'contact', 'resume'];
 
     return (
         <ul className="nav nav-tabs">
@@ -19,8 +19,6 @@ function Nav({contactSelected, setContactSelected}) {
                     </a>
                 </li>
             ))}
-            {/* FIXME: resume doesn't download */}
-            <li><a className='nav-link' href="../../assets/images/Resume.pdf" target="_blank">Resume</a></li>
         </ul>
     );
 }
