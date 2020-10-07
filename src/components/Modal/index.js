@@ -18,9 +18,10 @@ const InfoModal = ({ onClose, project, languages, description }) => {
             <Container>
                 <Row>
                     <Col><img className='modal-img' src={require(`../../assets/images/${project}.png`)} alt="current category" /></Col>
-                    <Col>
+                    <Col className='modal-desc'>
                         <h2>{project}</h2>
-                        <p><span>Languages: </span>{languages}</p>
+                        <h3 className='project-subtitle'>Languages:</h3>
+                        <p>{languages}</p>
                         <p>{description}</p>
                         <Button className='modal-btn' onClick={onClose}>Close</Button>
                     </Col>

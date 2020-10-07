@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import { validateEmail } from '../../utils/helpers';
+import Form from 'react-bootstrap/Form';
+import Button from 'react-bootstrap/Button';
+import Col from 'react-bootstrap/Col';
 
 function ContactForm() {
     const [invalidEmail, setErrorEmail] = useState('');
@@ -26,7 +29,7 @@ function ContactForm() {
         else if(e.target.name === 'name')  {
             if(invalidName === 'Please enter your name. (Required)' && e.target.value) {
                 setErrorName('');
-                setFormState({ ...formState, [e.target.name]: e.target.value });
+                setFormState({ ...formState, [e.target.email]: e.target.value });
             }
         }
 
@@ -59,7 +62,7 @@ function ContactForm() {
                                 <p className="error-text">{invalidName}</p>
                             </div>
                         )}</label>
-                    <input type="text" placeholder='Name' defaultValue={name} onChange={handleChange} name="name" autocomplete="off" />
+                    <input type="text" placeholder='Name' defaultValue={name} onChange={handleChange} name="name" autoomplete="off" />
                     <span class="tooltiptext">Required.</span>
                 </div>
                 <div className='tooltip'>
