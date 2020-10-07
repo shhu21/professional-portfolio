@@ -1,8 +1,5 @@
 import React, { useState } from 'react';
 import { validateEmail } from '../../utils/helpers';
-import Form from 'react-bootstrap/Form';
-import Button from 'react-bootstrap/Button';
-import Col from 'react-bootstrap/Col';
 
 function ContactForm() {
     const [invalidEmail, setErrorEmail] = useState('');

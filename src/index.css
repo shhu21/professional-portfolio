@@ -2,6 +2,7 @@
   --main-color: #106466;
   --secondary-color: #C0CCCE;
   --accent-color: #7A7876;
+  --second-accent-color: #F4E9D1;
   --font-style: "Palatino Linotype";
 }
 
@@ -79,6 +80,10 @@ main {
 
 .modal-container {
   text-align: center;
+}
+
+.modal-container .container .row {
+  min-height: 250px;
 }
 
 .modal-btn {
@@ -182,7 +187,7 @@ main {
 .error-text {
   border-radius: 3px;
   color: var(--accent-color);
-  background-color: #F4E9D1;
+  background-color: var(-second-accent-color);
   width: fit-content;
   font-size: 15px;
   margin: 0 20px;
@@ -373,8 +378,35 @@ footer {
   white-space: nowrap;
 }
 
+.resume-dl {
+  text-align: center;
+  width: 50%;
+  margin: auto;
+  color: var(--secondary-color);
+}
+
+.resume-dl .btn {
+  background-color: var(--second-accent-color);
+  padding: 10px 20px;
+  border-radius: 3px;
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: bold;
+  margin: 1rem;
+  border: none;
+}
+
+.resume-dl .btn:hover {
+  color: var(--second-accent-color);
+  background-color: var(--accent-color);
+}
+
 .resume-container {
   color: var(--secondary-color);
+}
+
+.resume-container .row:first-child .resume-section{
+  margin: 1rem 0;
 }
 
 .resume-section {
@@ -382,12 +414,57 @@ footer {
   font-size: 28px;
   border-bottom: 3px var(--main-color) solid;
   width: fit-content;
-  margin: 1rem 0;
+  margin: 1rem auto;
 }
 
 .resume-subtitle {
   font-weight: bold;
   font-size: 20px;
+}
+
+.education h5 {
+  font-weight: bolder;
+}
+
+
+.contact-info a {
+  color: var(--second-accent-color);
+  display: block;
+  font-size: larger;
+  padding: 5px;
+}
+
+.contact-info a:hover {
+  color: var(--accent-color);
+}
+
+.list-group-item {
+  background-color: transparent;
+}
+
+.card {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid var(--secondary-color);
+  width: 100%;
+}
+
+.card:last-child {
+  border-bottom: none;
+}
+
+.company-title {
+  font-weight: bold;
+}
+
+.resume-container .card-link {
+  color: var(--second-accent-color);
+  float: right;
+  font-size: large;
+}
+
+.resume-container .card-link:hover {
+  color: var(--accent-color)
 }
 
 /* TODO: media queries */

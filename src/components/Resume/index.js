@@ -1,19 +1,19 @@
-// TODO: convert resume into html and add the component
 import React from 'react'; 
 import ExperienceItem from '../ExperienceItem';
-import { experienceList, languageList, technologyList} from '../../assets/data/resumeList';
+import { experienceList, languageList, technologyList, awardsList } from '../../assets/data/resumeList';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import ListGroup from 'react-bootstrap/ListGroup';
+import Button from 'react-bootstrap/Button';
 
 function Resume() {
     return (
         <div>
             <div className='resume-dl'>
-                Download:
-                <a href='../../files/Resume.doc'>DOC</a>
-                <a href='../../files/Resume.pdf'>PDF</a>
+                <h4>Download:</h4>
+                <a href='../../files/Resume.doc' download><Button>Doc</Button></a>
+                <a href='../../files/Resume.pdf' download><Button>PDF</Button></a>
             </div>
             <Container className='resume-container'> 
                 <Row>
@@ -24,30 +24,65 @@ function Resume() {
                         <div className='education'>
                             <h3 className='resume-subtitle'>EDUCATION</h3>
                             <ListGroup variant="flush">
-                                <ListGroup.Item>Cras justo odio</ListGroup.Item>
-                                <ListGroup.Item>Dapibus ac facilisis in</ListGroup.Item>
-                                <ListGroup.Item>Morbi leo risus</ListGroup.Item>
-                                <ListGroup.Item>Porta ac consectetur ac</ListGroup.Item>
+                                <ListGroup.Item>
+                                <Container>
+                                    <Row>
+                                        <Col>
+                                            <p>2014-2018</p>
+                                        </Col>
+                                        <Col>
+                                            <p>University of California, Riverside</p>
+                                        </Col>
+                                    </Row>
+                                    <Row>
+                                        <Col>
+                                            <h5>Computer Science with Business Applications</h5>
+                                        </Col>
+                                    </Row>
+                                    <Row>
+                                        <Col>
+                                            <h5>Bachelor's of Science</h5>
+                                        </Col>
+                                    </Row>
+                                </Container>
+                                </ListGroup.Item>
+                                <ListGroup.Item>
+                                <Container>
+                                <Row>
+                                    <Col>
+                                        <p>2010-2014</p>
+                                    </Col>
+                                    <Col>
+                                        <p>Homestead High School</p>
+                                    </Col>
+                                </Row>
+                                <Row>
+                                    <Col>
+                                        <h5>High School Diploma</h5>
+                                    </Col>
+                                </Row>
+                            </Container>
+                                </ListGroup.Item>
                             </ListGroup>
                         </div>
                         <div className='contact-info'>
                             <h3 className='resume-subtitle'>CONTACT</h3>
-                            <h4>Email</h4>
-                            <h4>Phone Number</h4>
+                            <a href = "mailto: hu.sara21@gmail.com">hu.sara21@gmail.com</a>
+                            <a href="tel:+1-650-823-3319">+1-650-823-3319</a>
                         </div>
                     </Col>
-                    <Col xs={6} md={4}>
+                    <Col xs={12} md={4}>
                         <h2 className='resume-section'>SKILLS</h2>
                         <h3 className='resume-subtitle'>LANGUAGES</h3>
                         <ul>
                             {languageList.map((language) => (
-                                <li>{language.language}</li>
+                                <li>{language}</li>
                             ))}
                         </ul>
                         <h3 className='resume-subtitle'>ADDITIONAL TECHNOLOGIES</h3>
                         <ul>
                             {technologyList.map((tech) => (
-                                <li>{tech.technology}</li>
+                                <li>{tech}</li>
                             ))}
                         </ul>
                     </Col>
@@ -63,7 +98,9 @@ function Resume() {
                                     company={ex.company}
                                     title={ex.title}
                                     date={ex.date}
+                                    location={ex.location}
                                     description={ex.description}
+                                    website={ex.website}
                                 />
                             ))}
                         </ListGroup>
@@ -73,12 +110,11 @@ function Resume() {
                 <Row>
                     <Col>
                         <h2 className='resume-section'>AWARDS AND ACHIEVEMENTS</h2>
-                        <ListGroup variant="flush">
-                            <ListGroup.Item>Cras justo odio</ListGroup.Item>
-                            <ListGroup.Item>Dapibus ac facilisis in</ListGroup.Item>
-                            <ListGroup.Item>Morbi leo risus</ListGroup.Item>
-                            <ListGroup.Item>Porta ac consectetur ac</ListGroup.Item>
-                        </ListGroup>
+                        <ul>
+                            {awardsList.map((award) => (
+                                <li>{award}</li>
+                            ))}
+                        </ul>
                     </Col>
                 </Row>
                 </Container>

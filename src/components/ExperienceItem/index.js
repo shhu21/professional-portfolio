@@ -3,16 +3,19 @@ import Card from 'react-bootstrap/Card';
 
 function ExperienceItem({company, title, date, description, website}) {
     return(
-        <Card style={{ width: '18rem' }}>
+        <Card>
             <Card.Body>
-                <Card.Subtitle className="mb-2 text-muted">{date}</Card.Subtitle>
-                <Card.Title>{company}</Card.Title>
-                <Card.Subtitle className="mb-2 text-muted">{title}</Card.Subtitle>
+                <Card.Subtitle className="mb-2 text-muted company-title">{date}</Card.Subtitle>
+                <Card.Title className='company-title'>{company}</Card.Title>
+                <Card.Subtitle className="mb-2 text-muted company-title">{title}</Card.Subtitle>
                 <Card.Text>
-                Some quick example text to build on the card title and make up the bulk of
-                the card's content.
+                    <ul>
+                        {description.map((desc) => (
+                            <li>{desc}</li>
+                        ))}
+                    </ul>
                 </Card.Text>
-                <Card.Link href="#">Company Website</Card.Link>
+                <Card.Link href={website} target='_blank'>Company Website</Card.Link>
             </Card.Body>
         </Card>
     )

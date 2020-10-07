@@ -9,6 +9,7 @@ const profileList = [
         link: 'https://www.linkedin.com/in/sara-hu-12394311b/',
         src: 'https://img.icons8.com/fluent-systems-regular/48/000000/linkedin.png'
     },
+    // TODO: change to other github or reactivate fb
     {
         title: 'Facebook',
         link: 'https://www.facebook.com/sara.hu.33/',
