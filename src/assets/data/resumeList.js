@@ -60,7 +60,8 @@ const languageList = [
     'React',
     'Jade',
     'MongoDB',
-    'Express.js'
+    'Express.js',
+    'Jest'
 ];
 
 const technologyList = [
