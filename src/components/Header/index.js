@@ -1,14 +1,25 @@
 import React from 'react'; 
 import Nav from '../Nav';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 function Header({contactSelected, setContactSelected}) {
     return (
         <header>
-            <h1>Sara Hu</h1>
-            <Nav
-                contactSelected={contactSelected}
-                setContactSelected={setContactSelected}
-            ></Nav>
+            <Container>
+                <Row>
+                    <Col xs={12} md={6}>
+                        <h1>Sara Hu</h1>
+                    </Col>
+                    <Col xs={12} md={6}>
+                        <Nav
+                            contactSelected={contactSelected}
+                            setContactSelected={setContactSelected}
+                        ></Nav>
+                    </Col>
+                </Row>
+            </Container>
         </header>
     );
 }

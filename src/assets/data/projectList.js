@@ -1,4 +1,4 @@
-// TODO: add links to projects
+// TODO: add the rest of the projects
 
 const projectList = [
   {
@@ -22,13 +22,13 @@ const projectList = [
     github: 'https://github.com/shu012/ig-api-practice/',
     website: ''
   },
-  {
-    project: 'Social Network',
-    languages: 'Node.js, Mongoose, MongoDB',
-    description: 'An API for a social network using Mongoose and MongoDB',
-    github: 'https://github.com/shhu21/social-network/',
-    website: 'https://drive.google.com/file/d/1t0IS646JWAvGIOOtaXXDgrg4Bi5fNj8g/view'
-  },
+  // {
+  //   project: 'Social Network',
+  //   languages: 'Node.js, Mongoose, MongoDB',
+  //   description: 'An API for a social network using Mongoose and MongoDB',
+  //   github: 'https://github.com/shhu21/social-network/',
+  //   website: 'https://drive.google.com/file/d/1t0IS646JWAvGIOOtaXXDgrg4Bi5fNj8g/view'
+  // },
   { 
     project: 'Wine Blogger',
     languages: 'Node.js, mySQL, Sequalize, HandleBars, AWS S3 Bucket',
@@ -44,27 +44,27 @@ const projectList = [
     website: 'https://christian-vauris.github.io/trip-planner/'
   },
   // TODO: add employee tracker data
-  {
-    project: 'Employee Tracker',
-    languages: 'JavaScript, Inquirer',
-    description: 'A CLI that creates a team profile HTML page using user input.',
-    github: 'https://github.com/shhu21/team-profile-generator/',
-    website: 'https://drive.google.com/file/d/1wux0nQVLEylJsVU_1pI9jXsRLA40OCRK/view'
-  },
-  {
-    project: 'Team Profile Generator',
-    languages: 'JavaScript, Inquirer',
-    description: 'A CLI that creates a team profile HTML page using user input.',
-    github: 'https://github.com/shhu21/team-profile-generator/',
-    website: 'https://drive.google.com/file/d/1wux0nQVLEylJsVU_1pI9jXsRLA40OCRK/view'
-  },
-  {
-    project: 'Timed Quiz',
-    languages: 'JavaScript, HTML',
-    description: 'A timed coding quiz.',
-    github: 'https://github.com/shhu21/timed-quiz/',
-    website: 'https://shhu21.github.io/timed-quiz/'
-  },
+  // {
+  //   project: 'Employee Tracker',
+  //   languages: 'JavaScript, Inquirer',
+  //   description: 'A CLI that creates a team profile HTML page using user input.',
+  //   github: 'https://github.com/shhu21/team-profile-generator/',
+  //   website: 'https://drive.google.com/file/d/1wux0nQVLEylJsVU_1pI9jXsRLA40OCRK/view'
+  // },
+  // {
+  //   project: 'Team Profile Generator',
+  //   languages: 'JavaScript, Inquirer',
+  //   description: 'A CLI that creates a team profile HTML page using user input.',
+  //   github: 'https://github.com/shhu21/team-profile-generator/',
+  //   website: 'https://drive.google.com/file/d/1wux0nQVLEylJsVU_1pI9jXsRLA40OCRK/view'
+  // },
+  // {
+  //   project: 'Timed Quiz',
+  //   languages: 'JavaScript, HTML',
+  //   description: 'A timed coding quiz.',
+  //   github: 'https://github.com/shhu21/timed-quiz/',
+  //   website: 'https://shhu21.github.io/timed-quiz/'
+  // },
   {
     project: 'Weather Dashboard',
     languages: 'JavaScript, HTML',

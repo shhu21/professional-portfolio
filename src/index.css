@@ -115,6 +115,7 @@ main {
   height: 40vmin;
   left: 25%;
   position: relative;
+  margin-bottom: 20vmin;
 }
 
 .contact-section {
@@ -232,12 +233,12 @@ footer {
 .animated-title {
   color: var(--secondary-color);
   height: 50vmin;
-  left: 65%;
+  left: 50%;
   position: absolute;
   top: 50%;
   transform: translate(-50%, -50%);
   width: 50vmin;
-  margin-top: 10vmin;
+  margin-bottom: 10vmin;
 }
 .animated-title > div {
   height: 50%;
@@ -467,5 +468,20 @@ footer {
   color: var(--accent-color)
 }
 
-/* TODO: media queries */
-  /* About section: profile image needs to go above the text animation */
+@media only screen and (max-width: 600px) {
+  .mt-5, .my-5 {
+    margin-top: 10rem;
+  }
+
+  #about {
+    margin-top: -10vmin;
+  }
+
+  .nav-link {
+    font-size: 20px;
+  }
+
+  #contact-form button {
+    height: 8vmin;
+  }
+}
