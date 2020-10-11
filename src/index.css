@@ -89,7 +89,16 @@ main {
 .modal-btn {
   position: absolute;
   bottom: 20px;
+  width: 5rem;
+  height: 2.5rem;
   margin-left: -30px;
+  background-color: var(--main-color);
+  border: none;
+}
+
+.modal-btn:hover {
+  font-size: larger;
+  background-color: var(--main-color);
 }
 
 .modal-img {
@@ -101,6 +110,7 @@ main {
 
 .modal-desc {
   margin: 1rem;
+  min-height: 350px;
 }
 
 .section-title {
@@ -235,7 +245,7 @@ footer {
   height: 50vmin;
   left: 50%;
   position: absolute;
-  top: 50%;
+  top: 35%;
   transform: translate(-50%, -50%);
   width: 50vmin;
   margin-bottom: 10vmin;
@@ -359,10 +369,6 @@ footer {
   text-align: center;
 }
 
-.project-subtitle {
-  
-}
-
 .project-title span {
   display: block;
 }
@@ -483,5 +489,13 @@ footer {
 
   #contact-form button {
     height: 8vmin;
+  }
+
+  .modal-desc {
+    min-height: 450px;
+  }
+
+  .flex-container section {
+    margin: auto;
   }
 }

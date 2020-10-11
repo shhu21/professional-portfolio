@@ -9,10 +9,10 @@ function Header({contactSelected, setContactSelected}) {
         <header>
             <Container>
                 <Row>
-                    <Col xs={12} md={6}>
+                    <Col xs={12} md={4}>
                         <h1>Sara Hu</h1>
                     </Col>
-                    <Col xs={12} md={6}>
+                    <Col xs={12} md={8}>
                         <Nav
                             contactSelected={contactSelected}
                             setContactSelected={setContactSelected}
