@@ -2,6 +2,13 @@
 
 const projectList = [
   {
+    project: 'Garage Collage',
+    languages: 'React.js, AWS, PWA, MongoDB, Stripe',
+    description: 'An virtual garage sale e-commerce application, allowing users the capability to purchase and sell used googds.',
+    github: 'https://github.com/jennifermulder/garage-endeavor',
+    website: 'https://garage-collage-2468.herokuapp.com/'
+  },
+  {
     project: 'CampusMate (IOS)',
     languages: 'Swift, Google Maps API',
     description: 'An IOS mobile application that allows students at the University of California, Riverside to view all their student needs such as dining, building information, maps using Google Maps API, and their student portal.',
