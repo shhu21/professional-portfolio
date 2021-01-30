@@ -6,12 +6,20 @@
 # Table Of Contents
 
 * [Description](#description)
+* [Framework](#framework)
 * [Installation](#installation)
 * [User's Guide](#users-guide)
 * [Testing](#testing)
 
 # Description
 A professional portfolio built using React.js.
+
+# Framework
+- HTML
+- CSS
+- Bootstrap
+- Javascript
+- Express.js
 
 # Installation
 1. Clone the repository.
