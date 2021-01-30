@@ -19,6 +19,7 @@ A professional portfolio built using React.js.
 - CSS
 - Bootstrap
 - Javascript
+- React.js
 - Express.js
 
 # Installation
