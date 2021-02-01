@@ -17,8 +17,8 @@ function ProjectItem({project, lang, github, website, summary, desc}) {
                         ))}
                     </ul>
                 </Card.Text>
-                <Card.Link href={website} target='_blank'><span>Website</span></Card.Link>
-                <Card.Link href={github} target='_blank'><span>GitHub</span>|</Card.Link>
+                {website ? <Card.Link href={website} target='_blank'>|<span>Website</span></Card.Link> : ''}
+                <Card.Link href={github} target='_blank'><span>GitHub</span></Card.Link>
             </Card.Body>
         </Card>
     )
