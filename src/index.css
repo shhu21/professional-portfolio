@@ -464,6 +464,10 @@ footer {
   font-weight: bold;
 }
 
+.project-lang {
+  display: flex;
+}
+
 .resume-container .card-link {
   color: var(--second-accent-color);
   float: right;

@@ -71,10 +71,55 @@ const technologyList = [
     'Excel Spreadsheet'
 ];
 
-const awardsList = [
+const resumeProjList = [
+    {
+        project: 'Garage Collage',
+        languages: [ 'React.js | AWS | PWA | MongoDB | Stripe' ],
+        github: 'https://github.com/jennifermulder/garage-endeavor',
+        website: 'https://garage-collage-2468.herokuapp.com/ ',
+        summary: 'A virtual garage sale e-commerce application, allowing users the capability to purchase and sell used goods.',
+        desc: [
+            'Implemented and managed data using Amazon Web Services S3 Bucket to optimize data storage',
+            'Collaborated with other team members to facilitate webpage navigation ',
+            'Led team members in technical development to ensure product quality and efficiency'
+        ]        
+    },
+    {
+        project: 'Wine Blogger',
+        languages: [ 'Handlebars.js | AWS | mySQL | Sequelize | Express.js' ],
+        github: 'https://github.com/anitapeppercorn/wine-blogger',
+        website: 'https://secure-chamber-23014.herokuapp.com/',
+        summary: 'A wine blog that allows users to track their inventory of collected wines, post about their wine, and interact with other wine lovers.',
+        desc: [
+            'Utilized various web services to create dynamic website features such as a pop-up modal that allows users to add wine information and preserve user experience across diverse platforms',
+            'Designed and implemented website layout and schemes to improve user experience',
+            'Coordinated with other team members to facilitate code optimization'
+        ]
+    },
+    {
+        project: 'Instagram Image Gallery',
+        languages: [ 'React.js | API' ],
+        github: 'https://github.com/shu012/ig-api-practice',
+        // website: 'https://shu012.github.io/ig-api-practice/',
+        summary: 'Facilitates viewing of an Instagram user’s media.',
+        desc: [
+            'Created  and designed an image gallery using Instagram’s open API to add additional user features to improve user experience',
+            'Implemented a search, so that images may be searched by tag or tagged users ',
+            'Generated a filter to allow users to view images based on a user’s uploaded media and liked media'
+        ]
+    }
+];
+
+const associationsList = [
     'Association for Computing Machinery (ACM)',
     'Cross Campus Entrepreneurs',
     'HKN (IEEE Honor Society)'
-]
+];
 
-module.exports = { experienceList, languageList, technologyList, awardsList };
+const awardsList = [
+    'Dean’s Honors List', 
+    'Highlander Excellence Scholarship', 
+    'Middle Class Scholarship'
+];
+
+module.exports = { experienceList, languageList, technologyList, resumeProjList, associationsList, awardsList };
