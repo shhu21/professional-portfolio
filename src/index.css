@@ -474,8 +474,12 @@ footer {
   font-size: large;
 }
 
-.resume-container .card-link:hover {
-  color: var(--accent-color)
+.resume-container .card-link span {
+  padding: 0 1.5rem;
+}
+
+.resume-container .card-link span:hover {
+  color: var(--accent-color);
 }
 
 @media only screen and (max-width: 600px) {

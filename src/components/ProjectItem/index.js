@@ -17,15 +17,8 @@ function ProjectItem({project, lang, github, website, summary, desc}) {
                         ))}
                     </ul>
                 </Card.Text>
-                <Row classname='project-link'>
-                    <Col classname='col-6 col-sm-12'></Col>
-                    <Col classname='col-3 col-sm-12'>
-                        <Card.Link href={github} target='_blank'>GitHub</Card.Link>
-                    </Col>
-                    <Col classname='col-3 col-sm-12'>
-                        <Card.Link href={website} target='_blank'>Website</Card.Link>
-                    </Col>
-                </Row>
+                <Card.Link href={website} target='_blank'><span>Website</span></Card.Link>
+                <Card.Link href={github} target='_blank'><span>GitHub</span>|</Card.Link>
             </Card.Body>
         </Card>
     )
