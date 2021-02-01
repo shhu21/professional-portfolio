@@ -25,6 +25,28 @@ function Resume() {
                         <div className='education'>
                             <h3 className='resume-subtitle'>EDUCATION</h3>
                             <ListGroup variant="flush">
+                            <ListGroup.Item>
+                                <Container>
+                                    <Row>
+                                        <Col>
+                                            <p>2020</p>
+                                        </Col>
+                                        <Col>
+                                            <p>University of California, Berkeley</p>
+                                        </Col>
+                                    </Row>
+                                    <Row>
+                                        <Col>
+                                            <h5>Full Stack Web Development</h5>
+                                        </Col>
+                                    </Row>
+                                    <Row>
+                                        <Col>
+                                            <h5>Certificate</h5>
+                                        </Col>
+                                    </Row>
+                                </Container>
+                                </ListGroup.Item>
                                 <ListGroup.Item>
                                 <Container>
                                     <Row>
