@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/professional-portfolio/static/css/main.57474cfa.chunk.css",
+    "main.js": "/professional-portfolio/static/js/main.8acbc463.chunk.js",
+    "main.js.map": "/professional-portfolio/static/js/main.8acbc463.chunk.js.map",
+    "runtime-main.js": "/professional-portfolio/static/js/runtime-main.5a9c1606.js",
+    "runtime-main.js.map": "/professional-portfolio/static/js/runtime-main.5a9c1606.js.map",
+    "static/css/2.d9ad5f5c.chunk.css": "/professional-portfolio/static/css/2.d9ad5f5c.chunk.css",
+    "static/js/2.1fe31f2a.chunk.js": "/professional-portfolio/static/js/2.1fe31f2a.chunk.js",
+    "static/js/2.1fe31f2a.chunk.js.map": "/professional-portfolio/static/js/2.1fe31f2a.chunk.js.map",
+    "index.html": "/professional-portfolio/index.html",
+    "precache-manifest.5bfb329c9c221a9e4284b965a8f58b51.js": "/professional-portfolio/precache-manifest.5bfb329c9c221a9e4284b965a8f58b51.js",
+    "service-worker.js": "/professional-portfolio/service-worker.js",
+    "static/css/2.d9ad5f5c.chunk.css.map": "/professional-portfolio/static/css/2.d9ad5f5c.chunk.css.map",
+    "static/css/main.57474cfa.chunk.css.map": "/professional-portfolio/static/css/main.57474cfa.chunk.css.map",
+    "static/js/2.1fe31f2a.chunk.js.LICENSE.txt": "/professional-portfolio/static/js/2.1fe31f2a.chunk.js.LICENSE.txt",
+    "static/media/CampusMate (Android).png": "/professional-portfolio/static/media/CampusMate (Android).4637554c.png",
+    "static/media/CampusMate (IOS).png": "/professional-portfolio/static/media/CampusMate (IOS).ea09985b.png",
+    "static/media/Instagram Image Gallery.png": "/professional-portfolio/static/media/Instagram Image Gallery.87814ee2.png",
+    "static/media/Portfolio.png": "/professional-portfolio/static/media/Portfolio.482a0534.png",
+    "static/media/Pwd Generator.png": "/professional-portfolio/static/media/Pwd Generator.156205b9.png",
+    "static/media/Scheduler.png": "/professional-portfolio/static/media/Scheduler.aff65d5d.png",
+    "static/media/Team Profile Generator.png": "/professional-portfolio/static/media/Team Profile Generator.e614c1ff.png",
+    "static/media/Trip Planner.png": "/professional-portfolio/static/media/Trip Planner.03f8f05a.png",
+    "static/media/Weather Dashboard.png": "/professional-portfolio/static/media/Weather Dashboard.4972b0cf.png",
+    "static/media/Wine Blogger.png": "/professional-portfolio/static/media/Wine Blogger.e869fc8c.png",
+    "static/media/background.png": "/professional-portfolio/static/media/background.0a55d602.png",
+    "static/media/index.css": "/professional-portfolio/static/media/background.99f4634b.jpg",
+    "static/media/profile.jpeg": "/professional-portfolio/static/media/profile.6de530c6.jpeg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5a9c1606.js",
+    "static/css/2.d9ad5f5c.chunk.css",
+    "static/js/2.1fe31f2a.chunk.js",
+    "static/css/main.57474cfa.chunk.css",
+    "static/js/main.8acbc463.chunk.js"
+  ]
+}

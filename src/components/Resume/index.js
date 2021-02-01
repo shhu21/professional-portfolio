@@ -1,6 +1,7 @@
 import React from 'react'; 
 import ExperienceItem from '../ExperienceItem';
-import { experienceList, languageList, technologyList, awardsList } from '../../assets/data/resumeList';
+import ProjectItem from '../ProjectItem';
+import { experienceList, languageList, technologyList, resumeProjList, associationsList, awardsList } from '../../assets/data/resumeList';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -87,7 +88,24 @@ function Resume() {
                         </ul>
                     </Col>
                 </Row>
-
+                <Row>
+                    <Col>
+                        <h2 className='resume-section'>PROJECTS</h2>
+                        <ListGroup variant="flush">
+                            {resumeProjList.map((proj) => (
+                                <ProjectItem 
+                                    key={proj.project}
+                                    project={proj.project}
+                                    lang={proj.languages}
+                                    github={proj.github}
+                                    website={proj.website ? proj.website : undefined}
+                                    summary={proj.summary}
+                                    desc={proj.desc}
+                                />
+                            ))}
+                        </ListGroup>
+                    </Col>
+                </Row>
                 <Row>
                     <Col>
                         <h2 className='resume-section'>EXPERIENCE</h2>
@@ -106,7 +124,16 @@ function Resume() {
                         </ListGroup>
                     </Col>
                 </Row>
- 
+                <Row>
+                    <Col>
+                        <h2 className='resume-section'>ASSOCIATIONS</h2>
+                        <ul>
+                            {associationsList.map((association) => (
+                                <li>{association}</li>
+                            ))}
+                        </ul>
+                    </Col>
+                </Row>
                 <Row>
                     <Col>
                         <h2 className='resume-section'>AWARDS AND ACHIEVEMENTS</h2>
@@ -117,7 +144,7 @@ function Resume() {
                         </ul>
                     </Col>
                 </Row>
-                </Container>
+            </Container>
         </div>
     );
 }
