@@ -13,7 +13,7 @@ function Resume() {
         <div>
             <div className='resume-dl'>
                 <h4>Download:</h4>
-                <a href='../../files/Resume.doc' download><Button>Doc</Button></a>
+                <a href='../../files/Resume.docx' download><Button>Doc</Button></a>
                 <a href='../../files/Resume.pdf' download><Button>PDF</Button></a>
             </div>
             <Container className='resume-container'> 
