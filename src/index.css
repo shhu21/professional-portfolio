@@ -89,9 +89,9 @@ main {
 .modal-btn {
   position: absolute;
   bottom: 20px;
-  width: 5rem;
+  width: 100%;
   height: 2.5rem;
-  margin-left: -30px;
+  left: 0;
   background-color: var(--main-color);
   border: none;
 }
@@ -99,6 +99,22 @@ main {
 .modal-btn:hover {
   font-size: larger;
   background-color: var(--main-color);
+  color: #fff;
+}
+
+.modal-link {
+  position: relative;
+  color: black;
+  margin-top: 5rem;
+  font-size: larger;
+  width: 5rem;
+  height: 2.5rem;
+  margin-left: -30px;
+  border-bottom: var(--main-color) solid 3px;
+}
+
+.modal-link:hover {
+  color: var(--accent-color);
 }
 
 .modal-img {
@@ -120,6 +136,10 @@ main {
   text-align: center;
 }
 
+.section-about {
+  margin: 0 5rem;
+}
+
 .profile {
   margin-top: 10vmin;
   height: 40vmin;
@@ -128,10 +148,20 @@ main {
   margin-bottom: 20vmin;
 }
 
+.bio {
+  color: var(--second-accent-color);
+  margin-top: 10vmin;
+  font-size: large;
+}
+
 .contact-section {
   width: 50%;
-  margin: auto;
+  margin: 2rem auto;
   color: var(--accent-color);
+}
+
+.contact-section-info {
+  margin: auto;
 }
 
 #contact-form {
@@ -245,7 +275,7 @@ footer {
   height: 50vmin;
   left: 50%;
   position: absolute;
-  top: 35%;
+  top: 50%;
   transform: translate(-50%, -50%);
   width: 50vmin;
   margin-bottom: 10vmin;
@@ -287,6 +317,11 @@ footer {
   animation-fill-mode: forwards;
   top: 0;
   transform: translate(0, -100%);
+}
+
+.text span {
+  margin: 10px;
+  font-size: 13px;
 }
 
 .tooltip {

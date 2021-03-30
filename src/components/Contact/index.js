@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import { validateEmail } from '../../utils/helpers';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 function ContactForm() {
     const [invalidEmail, setErrorEmail] = useState('');
@@ -49,36 +52,50 @@ function ContactForm() {
     }
 
     return (
-        <section className='contact-section'>
-            <h1 className='section-title' id='contact-title'>Contact Me</h1>
-            <form id="contact-form" onSubmit={handleSubmit}>
-                <div className='tooltip'>
-                    <label htmlFor="name">Name:
-                    {invalidName && (
-                            <div>
-                                <p className="error-text">{invalidName}</p>
-                            </div>
-                        )}</label>
-                    <input type="text" placeholder='Name' defaultValue={name} onChange={handleChange} name="name" autoomplete="off" />
-                    <span class="tooltiptext">Required.</span>
-                </div>
-                <div className='tooltip'>
-                    <label htmlFor="email">Email address:
-                        {invalidEmail && (
-                            <div>
-                                <p className="error-text">{invalidEmail}</p>
-                            </div>
-                        )}</label>
-                    <input type="email" placeholder='Email' defaultValue={email} name="email" onChange={handleChange} autocomplete="off" />
-                    <span class="tooltiptext">Required.</span>
-                </div>
-                <div>
-                    <label htmlFor="message">Message:</label>
-                    <textarea name="message" defaultValue={message} onChange={handleChange} rows="5" />
-                </div>
-                <button data-testid="submit" type="submit">Submit</button>
-            </form>
-        </section>
+        <Container>
+            <Row className='contact-info'>
+                <Col>
+                    <Row>
+                        <a href = "mailto: hu.sara21@gmail.com" className='contact-section-info'>hu.sara21@gmail.com</a>
+                    </Row>
+                    <Row>
+                        <a href="tel:+1-650-823-3319" className='contact-section-info'>+1-650-823-3319</a>
+                    </Row>
+                </Col>
+            </Row>
+            <Row>
+                <Col className='contact-section'>
+                    <h1 className='section-title' id='contact-title'>Contact Me</h1>
+                    <form id="contact-form" onSubmit={handleSubmit}>
+                        <div className='tooltip'>
+                            <label htmlFor="name">Name:
+                            {invalidName && (
+                                    <div>
+                                        <p className="error-text">{invalidName}</p>
+                                    </div>
+                                )}</label>
+                            <input type="text" placeholder='Name' defaultValue={name} onChange={handleChange} name="name" autoomplete="off" />
+                            <span class="tooltiptext">Required.</span>
+                        </div>
+                        <div className='tooltip'>
+                            <label htmlFor="email">Email address:
+                                {invalidEmail && (
+                                    <div>
+                                        <p className="error-text">{invalidEmail}</p>
+                                    </div>
+                                )}</label>
+                            <input type="email" placeholder='Email' defaultValue={email} name="email" onChange={handleChange} autocomplete="off" />
+                            <span class="tooltiptext">Required.</span>
+                        </div>
+                        <div>
+                            <label htmlFor="message">Message:</label>
+                            <textarea name="message" defaultValue={message} onChange={handleChange} rows="5" />
+                        </div>
+                        <button data-testid="submit" type="submit">Submit</button>
+                    </form>
+                </Col>
+            </Row>
+        </Container>
     );
 }
 export default ContactForm;

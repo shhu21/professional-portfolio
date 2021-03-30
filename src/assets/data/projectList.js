@@ -4,7 +4,7 @@ const projectList = [
   {
     project: 'Garage Collage',
     languages: 'React.js, AWS, PWA, MongoDB, Stripe',
-    description: 'An virtual garage sale e-commerce application, allowing users the capability to purchase and sell used googds.',
+    description: 'An virtual garage sale e-commerce application, allowing users the capability to purchase and sell used goods.',
     github: 'https://github.com/jennifermulder/garage-endeavor',
     website: 'https://garage-collage-2468.herokuapp.com/'
   },
@@ -13,7 +13,7 @@ const projectList = [
     languages: 'Swift, Google Maps API',
     description: 'An IOS mobile application that allows students at the University of California, Riverside to view all their student needs such as dining, building information, maps using Google Maps API, and their student portal.',
     github: 'https://github.com/shu012/UCR-Student-Toolbox',
-    website: ''
+    website: 'https://apps.apple.com/us/app/rmate/id1418361482'
   },
   {
     project: 'CampusMate (Android)',
@@ -81,7 +81,7 @@ const projectList = [
   },
   {
     project: 'Portfolio',
-    languages: 'JavaScript, HTNL',
+    languages: 'JavaScript, HTML',
     description: 'A basic work portfolio.',
     github: 'https://github.com/shhu21/portfolio',
     website: ' https://shhu21.github.io/portfolio/'

@@ -27,7 +27,7 @@ The following are personal deverloper's notes on the process and technologies us
 # Updating deployment
 1. Be sure to commit any changes to the a working branch (not the `gh-pages` branch)
 2. Checkout the `gh-pages` branch
-    - `checkout gh-pages`
+    - `git checkout gh-pages`
 3. Pull changes from the main branch
     - `git pull origin main`
 4. Deploy

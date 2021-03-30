@@ -12,6 +12,8 @@ const Portfolio = ({projects}) => {
             project={proj.project}
             languages={proj.languages}
             description={proj.description} 
+            website={proj.website}
+            github={proj.github}
           />
         ))}
       </div>

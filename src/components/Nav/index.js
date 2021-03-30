@@ -3,7 +3,7 @@ import Nav from 'react-bootstrap/Nav';
 import { capitalizeFirstLetter } from '../../utils/helpers';
 
 function NavItem({contactSelected, setContactSelected}) {
-    const tabs = ['about', 'portfolio', 'contact', 'resume'];
+    const tabs = ['home', 'about', 'portfolio', 'contact', 'resume'];
 
     return (
         <Nav className="justify-content-end" activeKey="/home">
