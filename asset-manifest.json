@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/professional-portfolio/static/css/main.bb132b8a.chunk.css",
+    "main.css": "/professional-portfolio/static/css/main.a4d5ac2a.chunk.css",
     "main.js": "/professional-portfolio/static/js/main.d89ad9f0.chunk.js",
     "main.js.map": "/professional-portfolio/static/js/main.d89ad9f0.chunk.js.map",
     "runtime-main.js": "/professional-portfolio/static/js/runtime-main.5a9c1606.js",
     "runtime-main.js.map": "/professional-portfolio/static/js/runtime-main.5a9c1606.js.map",
-    "static/css/2.d9ad5f5c.chunk.css": "/professional-portfolio/static/css/2.d9ad5f5c.chunk.css",
+    "static/css/2.8163d445.chunk.css": "/professional-portfolio/static/css/2.8163d445.chunk.css",
     "static/js/2.08c08c13.chunk.js": "/professional-portfolio/static/js/2.08c08c13.chunk.js",
     "static/js/2.08c08c13.chunk.js.map": "/professional-portfolio/static/js/2.08c08c13.chunk.js.map",
     "index.html": "/professional-portfolio/index.html",
-    "precache-manifest.985b8468c5b28c08805efbf99ed61b9c.js": "/professional-portfolio/precache-manifest.985b8468c5b28c08805efbf99ed61b9c.js",
+    "precache-manifest.656b1e5dcd87142f3839c4d74e649bc4.js": "/professional-portfolio/precache-manifest.656b1e5dcd87142f3839c4d74e649bc4.js",
     "service-worker.js": "/professional-portfolio/service-worker.js",
-    "static/css/2.d9ad5f5c.chunk.css.map": "/professional-portfolio/static/css/2.d9ad5f5c.chunk.css.map",
-    "static/css/main.bb132b8a.chunk.css.map": "/professional-portfolio/static/css/main.bb132b8a.chunk.css.map",
+    "static/css/2.8163d445.chunk.css.map": "/professional-portfolio/static/css/2.8163d445.chunk.css.map",
+    "static/css/main.a4d5ac2a.chunk.css.map": "/professional-portfolio/static/css/main.a4d5ac2a.chunk.css.map",
     "static/js/2.08c08c13.chunk.js.LICENSE.txt": "/professional-portfolio/static/js/2.08c08c13.chunk.js.LICENSE.txt",
     "static/media/CampusMate (Android).png": "/professional-portfolio/static/media/CampusMate (Android).4637554c.png",
     "static/media/CampusMate (IOS).png": "/professional-portfolio/static/media/CampusMate (IOS).ea09985b.png",
@@ -31,9 +31,9 @@
   },
   "entrypoints": [
     "static/js/runtime-main.5a9c1606.js",
-    "static/css/2.d9ad5f5c.chunk.css",
+    "static/css/2.8163d445.chunk.css",
     "static/js/2.08c08c13.chunk.js",
-    "static/css/main.bb132b8a.chunk.css",
+    "static/css/main.a4d5ac2a.chunk.css",
     "static/js/main.d89ad9f0.chunk.js"
   ]
 }
