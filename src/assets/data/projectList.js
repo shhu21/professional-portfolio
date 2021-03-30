@@ -47,8 +47,8 @@ const projectList = [
     project: 'Trip Planner',
     languages: 'Node.js, HTML',
     description: 'A trip planner that allows the user to search a location for places of food or entertainment using Yelp\'s open API.  These places can then be saved to a created trip for later viewing and/or editing.  A weather dashboard is, also, included to check weather forecasts.',
-    github: 'https://github.com/christian-vauris/trip-planner/',
-    website: 'https://christian-vauris.github.io/trip-planner/'
+    github: 'https://github.com/Christian-Vavuris/Trip-Planner',
+    website: 'https://christian-vavuris.github.io/Trip-Planner/'
   },
   // TODO: add employee tracker data
   // {

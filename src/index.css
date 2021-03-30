@@ -94,6 +94,7 @@ main {
   left: 0;
   background-color: var(--main-color);
   border: none;
+  margin-top: 10px;
 }
 
 .modal-btn:hover {
@@ -122,6 +123,7 @@ main {
   height: 100%;
   transition-duration: 1.2s;
   transform: scale(1);
+  object-fit: contain;
 }
 
 .modal-desc {
